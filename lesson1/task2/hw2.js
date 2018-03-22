@@ -3,8 +3,8 @@ var two = parseInt(prompt('Введите число b'));
 
 alert('Сначала A: ' + one + ', B: ' + two);
 
-var three = one;
-var one = two;
-var two = three;
+var one = one + two;
+var two = one - two; 
+var one = one - two; 
 
 alert('Теперь A: ' + one + ', B: ' + two);
