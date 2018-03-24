@@ -11,7 +11,12 @@ function mult(arg1, arg2) {
 }
 
 function div(arg1, arg2) {
-    return arg1/arg2;
+    if(!arg2==0){
+        return arg1/arg2;
+    } else {
+        return("Делить на ноль нельзя!")
+    }
+    
 }
 
 function mathOperation(arg1, arg2, operation) {
@@ -42,4 +47,4 @@ a = parseInt(prompt("Введите первое число"));
 b = parseInt(prompt("Введите второе число"));
 oper = prompt("Введите операцию");
 
-alert(mathOperation(a, b, oper));
+mathOperation(a, b, oper);
