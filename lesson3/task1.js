@@ -1,7 +1,6 @@
 var i = 2;
 
 var arr = [];
-var check = [];
 
 loop: while (i <= 100) {
     var n = i;
@@ -15,24 +14,8 @@ loop: while (i <= 100) {
         }else{
             continue;
         }
-
     }
     i++;
-    
 }
 
 alert(arr);
-
-
-
-
-// nextPrime:
-//   for (var i = 2; i <= 10; i++) {
-
-//     for (var j = 2; j < i; j++) {
-//       if (i % j == 0) continue nextPrime;
-//     }
-
-//     alert( i ); // простое
-//   }
-
