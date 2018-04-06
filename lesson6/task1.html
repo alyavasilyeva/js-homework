@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 1, 3</title>
+</head>
+<body>
+    <style>
+        .container {
+            max-width: 1100px;
+            width: 90%;
+            margin: auto;
+        }
+
+        .bigimg {
+            position: relative;
+            text-align: center;
+        }
+        #bigImage {
+            width: 1000px;
+            
+        }
+
+        #next, #prev {
+            position: absolute;
+            top: 50%;
+            left: -5%;
+        }
+
+        #next {
+            left: unset;
+            right: -5%;
+        }
+
+        #thumbnailsWrap {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+    <div class="container">
+        <h1>Задание 1</h1>
+        <div class="slideWrap">
+            <div class="bigimg">
+                <button id="prev" onclick="slide(this.id)">назад</button>
+                <img src="assets/big/slider1.jpg" id="bigImage" alt="">
+                <button id="next" onclick='slide(this.id)'>вперед</button>
+            </div>
+            <div id="thumbnailsWrap">
+                <img src="assets/small/slider1.jpg" alt="" class="thumbnail" onclick="f(this.src)">
+                <img src="assets/small/slider2.jpg" alt="" class="thumbnail" onclick="f(this.src)">
+                <img src="assets/small/slider3.jpg" alt="" class="thumbnail" onclick="f(this.src)">
+                <img src="assets/small/slider4.jpg" alt="" class="thumbnail" onclick="f(this.src)">
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/task1.js"></script>
+</body>
+</html>
+
+

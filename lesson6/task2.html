@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 2</title>
+</head>
+<body>
+    <style>
+        .container {
+            max-width: 1200px;
+            width: 90%;
+            margin: auto;
+        }
+
+        .divider {
+            height: 2px;
+            background-color: silver;
+            max-width: 95%;
+            margin: 50px auto;
+        }
+        .productsWrap {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .productItem {
+            max-width: 30%;
+        }
+
+        .productImg {
+            max-height: 300px;
+        }
+
+        td {
+            padding: 5px 15px;
+        }
+
+        tr td:last-child,
+        tfoot td {
+            text-align: right;
+        }
+    </style>
+
+    <div class="container">
+        <h1>Задание 2</h1>
+        <div class="cardWrap">
+            <table id="cardTable">
+                <thead>
+                    <tr>
+                        <td>Наименование</td>
+                        <td>Цена</td>
+                        <td>Количество</td>
+                        <td>Стоимость</td>
+                    </tr>
+                </thead>
+                <tbody id="productList">
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Итого:</td>
+                        <td id="price">0</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <hr class="divider">
+        <div class="productsWrap">
+            <div class="productItem">
+                <div class="productDesc">
+                    <img src="assets/imgbooks/1.jpeg" alt="" class="productImg">
+                    <p class="productTitle">Full Stack JavaScript</p>
+                    <p class="productPrice">4 605 руб</p>
+                    <p>Количество:</p>
+                    <input type="number" class="productAmount" min="0" max="10">
+                </div>
+                <button class="buy" onclick="buy(this.previousElementSibling)">Купить</button>
+            </div>
+            <div class="productItem">
+                <div class="productDesc">
+                    <img src="assets/imgbooks/2.jpeg" alt="" class="productImg">
+                    <p class="productTitle">JavaScript для чайников</p>
+                    <p class="productPrice">830 pуб</p>
+                    <p>Количество:</p>
+                    <input type="number" class="productAmount" min="0" max="10">
+                </div>
+                <button class="buy" onclick="buy(this.previousElementSibling)">Купить</button>
+            </div>
+            <div class="productItem">
+                <div class="productDesc">
+                    <img src="assets/imgbooks/3.jpg" alt="" class="productImg">
+                    <p class="productTitle">Изучаем программирование на JavaScript</p>
+                    <p class="productPrice">1 503 pуб</p>
+                    <p>Количество:</p>
+                    <input type="number" class="productAmount" min="0" max="10">
+                </div>
+                <button class="buy" onclick="buy(this.previousElementSibling)">Купить</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/task2.js"></script>
+</body>
+</html>
